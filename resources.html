@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Future Focus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Future Focus</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="our-work.html">Programs</a></li>
+                <li class="nav-item"><a href="resources.html" class="active">Resources</a></li>
+                <li class="nav-item"><a href="community.html">Community</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="#donate" class="donate-btn">Support Our Work</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="page-hero fade-in">
+        <div class="container">
+            <h1>Financial Education Resources</h1>
+            <p>Access our comprehensive collection of tools and resources to support your financial journey.</p>
+        </div>
+    </section>
+
+    <section class="resources-grid fade-in">
+        <div class="container">
+            <div class="resources-categories">
+                <div class="resource-category">
+                    <h2>Getting Started</h2>
+                    <div class="resource-items">
+                        <div class="resource-item">
+                            <i class="fas fa-book"></i>
+                            <h3>Financial Basics Guide</h3>
+                            <p>Essential knowledge for building a strong financial foundation.</p>
+                            <a href="#" class="resource-link">Download PDF</a>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fas fa-calculator"></i>
+                            <h3>Budgeting Tools</h3>
+                            <p>Interactive spreadsheets and calculators for budget planning.</p>
+                            <a href="#" class="resource-link">Access Tools</a>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fas fa-video"></i>
+                            <h3>Video Tutorials</h3>
+                            <p>Step-by-step guides on basic financial concepts.</p>
+                            <a href="#" class="resource-link">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h2>Investment Education</h2>
+                    <div class="resource-items">
+                        <div class="resource-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Investment Basics</h3>
+                            <p>Learn the fundamentals of investing and building wealth.</p>
+                            <a href="#" class="resource-link">Start Learning</a>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fas fa-university"></i>
+                            <h3>Retirement Planning</h3>
+                            <p>Comprehensive guides for long-term financial security.</p>
+                            <a href="#" class="resource-link">View Guide</a>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Risk Management</h3>
+                            <p>Understanding and managing investment risks.</p>
+                            <a href="#" class="resource-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h2>Credit & Debt Management</h2>
+                    <div class="resource-items">
+                        <div class="resource-item">
+                            <i class="fas fa-credit-card"></i>
+                            <h3>Credit Building</h3>
+                            <p>Strategies for building and maintaining good credit.</p>
+                            <a href="#" class="resource-link">Read Guide</a>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <h3>Debt Reduction</h3>
+                            <p>Tools and strategies for managing and reducing debt.</p>
+                            <a href="#" class="resource-link">Get Started</a>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <h3>Loan Calculator</h3>
+                            <p>Calculate payments and create repayment plans.</p>
+                            <a href="#" class="resource-link">Use Calculator</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resource-library fade-in">
+        <div class="container">
+            <h2>Resource Library</h2>
+            <div class="library-filters">
+                <button class="filter-btn active" data-filter="all">All Resources</button>
+                <button class="filter-btn" data-filter="guides">Guides</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+                <button class="filter-btn" data-filter="videos">Videos</button>
+            </div>
+            <div class="library-grid">
+                <!-- Resources will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section fade-in">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to receive new resources and financial tips directly in your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="primary-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Future Focus</h3>
+                    <p>Empowering communities through financial education and literacy programs.</p>
+                    <div class="social-links">
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="our-work.html">Programs</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>123 Financial District<br>San Francisco, CA 94111</p>
+                    <p>Email: info@futurefocus.org<br>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Future Focus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
