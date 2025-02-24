@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future Focus - Financial Literacy for Everyone</title>
+    <title>Future Focused - Financial Literacy for Everyone</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdeliv    r.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        /* Slider Styles */
+        .image-slider {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .image-slider img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="images/453378063_2792624230892516_8429596864512086761_n.jpg" alt="Logo" class="logo-image">
+            <span class="logo-text">Future Focused</span>
+        </div>
         <nav>
-            <div class="logo">
-                <h1>Future Focus</h1>
-            </div>
             <button class="menu-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -23,7 +38,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#programs">Programs</a></li>
                 <li><a href="#impact">Impact</a></li>
-                <li><a href="team.html">Team</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#resources">Resources</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#donate" class="donate-btn">Donate Now</a></li>
@@ -36,18 +51,65 @@
             <div class="hero-content">
                 <h1>Empowering Financial Futures</h1>
                 <p class="lead">Building stronger communities through innovative financial education and literacy programs that create lasting impact.</p>
-                <div class="cta-buttons">
-                    <a href="#programs" class="primary-btn">
-                        <i class="fas fa-book-open"></i>
+                <div class="hero-buttons">
+                    <a href="#programs" class="hero-button hero-button-primary">
+                        <i class="fas fa-book"></i>
                         Explore Programs
                     </a>
-                    <a href="#donate" class="secondary-btn">
+                    <a href="#support" class="hero-button hero-button-secondary">
                         <i class="fas fa-heart"></i>
                         Support Our Mission
                     </a>
                 </div>
             </div>
         </section>
+
+        <!-- Full slider section with background -->
+        <div class="full-width-slider">
+            <!-- Wrap slider and dots together -->
+            <div class="slider-with-dots">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/IMG_8710.JPG" alt="Event 1">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/IMG_8737.JPG" alt="Event 2">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/futurefocus1.png" alt="Event 3">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/IMG_8941.JPG" alt="Event 3">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/IMG_8909.JPG" alt="Event 4">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/IMG_8937.JPG" alt="Event 5">
+                    </div>
+                    
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+
+                <!-- Dots container -->
+                <div class="slideshow-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+
+            <!-- Content Box -->
+            <div class="slider-content">
+                <h2>Our Impact</h2>
+                <p>Through our innovative financial literacy programs, we've empowered countless students with essential money management skills. Our hands-on approach combines real-world experience with expert guidance, creating lasting impact in our community.</p>
+                <p>Each workshop and event is carefully designed to build confidence and understanding in personal finance, preparing the next generation for financial success.</p>
+            </div>
+        </div>
 
         <section id="about" class="mission-section">
             <div class="container">
@@ -72,26 +134,41 @@
                 </div>
             </div>
         </section>
+                
+                <div class="mission-image fade-in">
+                    <img src="images/mission-image.jpg" alt="Financial education workshop">
+                </div>
+            </div>
+        </section>
 
-        <section id="impact" class="impact-section">
-            <div class="container">
-                <h2 class="text-center">Our Impact</h2>
-                <p class="lead text-center">Through dedication and community partnership, we've created meaningful change in financial literacy across communities.</p>
-                <div class="impact-stats">
-                    <div class="stat fade-in">
-                        <span class="stat-number">15,000+</span>
-                        <span class="stat-label">Lives Impacted</span>
-                        <p class="stat-description">Through our comprehensive financial literacy programs</p>
+        <section class="impact-section">
+            <div class="impact-header">
+                <h2 class="impact-title">Our Impact</h2>
+                <p class="impact-subtitle">Through dedication and community partnership, we've created meaningful change in financial literacy across communities.</p>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-bar">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-content">
+                        <div class="stat-title">Members Mentored</div>
+                        <div class="stat-description">Through our comprehensive financial literacy programs</div>
                     </div>
-                    <div class="stat fade-in">
-                        <span class="stat-number">92%</span>
-                        <span class="stat-label">Success Rate</span>
-                        <p class="stat-description">Of participants report improved financial confidence</p>
+                </div>
+
+                <div class="stat-bar">
+                    <div class="stat-number">97%</div>
+                    <div class="stat-content">
+                        <div class="stat-title">Success Rate</div>
+                        <div class="stat-description">Of participants report improved financial confidence</div>
                     </div>
-                    <div class="stat fade-in">
-                        <span class="stat-number">75+</span>
-                        <span class="stat-label">Community Partners</span>
-                        <p class="stat-description">Working together to create lasting impact</p>
+                </div>
+
+                <div class="stat-bar">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-content">
+                        <div class="stat-title">Community Partners</div>
+                        <div class="stat-description">Working together to create lasting impact</div>
                     </div>
                 </div>
             </div>
@@ -152,7 +229,7 @@
                 <div class="events-grid">
                     <div class="event-card fade-in">
                         <div class="event-date">
-                            <span class="month">JAN</span>
+                            <span class="month">MAR</span>
                             <span class="day">15</span>
                         </div>
                         <div class="event-details">
@@ -167,7 +244,7 @@
                     </div>
                     <div class="event-card fade-in">
                         <div class="event-date">
-                            <span class="month">FEB</span>
+                            <span class="month">APR</span>
                             <span class="day">01</span>
                         </div>
                         <div class="event-details">
@@ -184,6 +261,13 @@
             </div>
         </section>
 
+
+
+
+
+
+
+        
         <section id="contact" class="contact-section">
             <div class="container">
                 <div class="contact-grid">
@@ -209,7 +293,7 @@
                                 <i class="fas fa-envelope"></i>
                                 <div>
                                     <h4>Email Us</h4>
-                                    <p>info@futurefocus.org</p>
+                                    <p>info@futurefocused.org</p>
                                 </div>
                             </div>
                         </div>
@@ -242,19 +326,32 @@
                 </div>
             </div>
         </section>
+
+        <section class="founder-section">
+            <div class="founder-content">
+                <h2 class="founder-title">Meet Our Founder</h2>
+                <p class="founder-text">
+                    Nick Laslo, the founder of Future Focused Youth, is dedicated to empowering the next generation with essential financial literacy skills. Through his innovative approach and passion for education, he has developed comprehensive programs that combine real-world experience with expert guidance.
+                </p>
+                <p class="founder-text">
+                    With a strong background in finance and education, Nick has created a platform that makes financial literacy accessible and engaging for young people. His vision has helped shape the future of countless students, providing them with the tools and knowledge they need for financial success.
+                </p>
+            </div>
+            <img src="images/upscalemedia-transformed.png" alt="Nick Laslo - Founder of Future Focused Youth" class="founder-image">
+        </section>
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Future Focus</h3>
+                    <h3>Future Focused</h3>
                     <p>Empowering communities through innovative financial education and literacy programs that create lasting impact.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/futurefocused.youth/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -279,7 +376,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Future Focus. All rights reserved.</p>
+                <p>&copy; 2024 Future Focused. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -300,9 +397,12 @@
         });
 
         // Header scroll effect
-        window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
-            if (window.scrollY > 50) {
+            const scrollPosition = window.scrollY;
+
+            // Only add the 'scrolled' class for background color change
+            if (scrollPosition > 50) { // Adjust the scroll threshold as needed
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
@@ -340,6 +440,51 @@
                     menuToggle.classList.remove('active');
                     navLinks.classList.remove('active');
                 }
+            });
+        });
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) slideIndex = 1;
+            if (n < 1) slideIndex = slides.length;
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.image-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                fade: true,
+                cssEase: 'linear'
             });
         });
     </script>
