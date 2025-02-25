@@ -1438,3 +1438,77 @@ footer::before {
     content: "•";
     color: var(--accent);
 }
+
+.team-section {
+    text-align: center; /* Center the text */
+    padding: 4rem 2rem; /* Add padding for spacing */
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary) 100%); /* Gradient background using theme colors */
+    color: white; /* Change text color to white for better contrast */
+}
+
+.team-title {
+    font-size: 3rem; /* Increased font size for the title */
+    margin-bottom: 1rem; /* Space below the title */
+}
+
+.team-caption {
+    font-size: 1.25rem; /* Font size for the caption */
+    margin-bottom: 2rem; /* Space below the caption */
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for the caption */
+}
+
+.team-image-container {
+    max-width: 1200px; /* Limit the width of the image container */
+    margin: 0 auto; /* Center the container */
+}
+
+.team-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+
+.team-slider {
+    position: relative;
+    max-width: 1200px; /* Limit the width of the slider */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden; /* Hide overflow */
+}
+
+.slide {
+    display: none; /* Hide all slides by default */
+}
+
+.slide.active {
+    display: block; /* Show the active slide */
+}
+
+.team-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333; /* Button text color */
+    z-index: 10; /* Ensure buttons are above the images */
+}
+
+button.prev {
+    left: 10px; /* Position left button */
+}
+
+button.next {
+    right: 10px; /* Position right button */
+}
