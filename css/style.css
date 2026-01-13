@@ -410,7 +410,7 @@ header.scrolled .logo-text {
     text-align: center;
     width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto var(--spacing-sm) auto;
     padding: 0;
     box-sizing: border-box;
     word-break: normal;
@@ -422,12 +422,20 @@ header.scrolled .logo-text {
     text-align: center;
     width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto var(--spacing-sm) auto;
     padding: 0;
     box-sizing: border-box;
     word-break: normal;
     overflow-wrap: normal;
     hyphens: none;
+}
+
+.program-card p {
+    text-align: center;
+}
+
+.value-card p {
+    text-align: center;
 }
 
 .value-card:hover i {
@@ -591,6 +599,8 @@ header.scrolled .logo-text {
 .program-features {
     list-style: none;
     margin-top: var(--spacing-md);
+    text-align: center;
+    padding: 0;
 }
 
 .program-features li {
@@ -598,6 +608,7 @@ header.scrolled .logo-text {
     color: var(--text-secondary);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .program-features li::before {
