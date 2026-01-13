@@ -359,7 +359,7 @@ header.scrolled .logo-text {
 
 .mission-values {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
     margin-top: var(--spacing-xl);
 }
@@ -410,12 +410,24 @@ header.scrolled .logo-text {
     text-align: center;
     width: 100%;
     display: block;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 .program-card h3 {
     text-align: center;
     width: 100%;
     display: block;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 .value-card:hover i {
@@ -528,7 +540,7 @@ header.scrolled .logo-text {
 
 .programs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
     margin-top: var(--spacing-xl);
 }
