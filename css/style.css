@@ -409,6 +409,13 @@ header.scrolled .logo-text {
 .value-card h3 {
     text-align: center;
     width: 100%;
+    display: block;
+}
+
+.program-card h3 {
+    text-align: center;
+    width: 100%;
+    display: block;
 }
 
 .value-card:hover i {
@@ -534,6 +541,7 @@ header.scrolled .logo-text {
     position: relative;
     overflow: hidden;
     box-shadow: var(--shadow-sm);
+    text-align: center;
 }
 
 .program-card:hover {
@@ -549,7 +557,7 @@ header.scrolled .logo-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: var(--spacing-md);
+    margin: 0 auto var(--spacing-md) auto;
     transition: all 0.3s ease;
 }
 
