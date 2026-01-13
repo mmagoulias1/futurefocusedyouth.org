@@ -360,7 +360,7 @@ header.scrolled .logo-text {
 .mission-values {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-lg);
+    gap: 2.5rem;
     margin-top: var(--spacing-xl);
 }
 
@@ -549,7 +549,7 @@ header.scrolled .logo-text {
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-lg);
+    gap: 2.5rem;
     margin-top: var(--spacing-xl);
 }
 
