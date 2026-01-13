@@ -1512,3 +1512,365 @@ button.prev {
 button.next {
     right: 10px; /* Position right button */
 }
+
+/* ============================================
+   COMPREHENSIVE MOBILE RESPONSIVE STYLES
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Full Width Slider Section - Mobile */
+    .full-width-slider {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .slideshow-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .slider-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 2rem 1.5rem;
+        margin: 0 auto;
+    }
+
+    .slideshow-dots {
+        width: 100%;
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .slider-with-dots {
+        width: 100%;
+    }
+
+    /* Founder Section - Mobile */
+    .founder-section {
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .founder-content {
+        max-width: 100%;
+        order: 2;
+    }
+
+    .founder-title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .founder-text {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .founder-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        order: 1;
+        margin: 0 auto;
+    }
+
+    /* Impact Section - Mobile */
+    .impact-section {
+        padding: 3rem 1rem;
+    }
+
+    .impact-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .impact-subtitle {
+        font-size: 1rem;
+    }
+
+    .stats-container {
+        gap: 1rem;
+    }
+
+    .stat-bar {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+        min-width: auto;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .stat-number::after {
+        display: none;
+    }
+
+    .stat-title {
+        font-size: 1.25rem;
+    }
+
+    .stat-description {
+        font-size: 1rem;
+    }
+
+    /* Hero Section - Mobile */
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero .lead {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .hero-button {
+        min-width: auto;
+        width: 100%;
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Programs Section - Mobile */
+    .programs-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .program-card {
+        padding: 1.5rem;
+    }
+
+    /* Events Section - Mobile */
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .event-card {
+        flex-direction: column;
+    }
+
+    .event-date {
+        min-width: 100%;
+        padding: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Gallery Grid - Mobile */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+
+    /* Mission Values - Mobile */
+    .mission-values {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .value-card {
+        padding: 1.5rem;
+    }
+
+    .value-card i {
+        font-size: 2.5rem;
+    }
+
+    /* Contact Section - Mobile */
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    /* Footer - Mobile */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    /* Header - Mobile */
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
+    }
+
+    .logo-image {
+        height: 40px;
+    }
+
+    /* Container - Mobile */
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Section Spacing - Mobile */
+    section {
+        padding: 3rem 0;
+    }
+
+    /* Typography - Mobile */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* Co-founder Section - Mobile Enhancements */
+    .cofounder-section {
+        padding: 3rem 1rem;
+    }
+
+    .cofounder-container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .cofounder-image {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .cofounder-title {
+        font-size: 1.75rem;
+    }
+
+    .cofounder-name {
+        font-size: 1.25rem;
+    }
+
+    .cofounder-role {
+        font-size: 1rem;
+    }
+
+    .cofounder-text {
+        font-size: 1rem;
+    }
+}
+
+/* Extra Small Devices (phones in portrait) */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .impact-title {
+        font-size: 1.75rem;
+    }
+
+    .founder-title {
+        font-size: 1.5rem;
+    }
+
+    .cofounder-title {
+        font-size: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .mySlides img {
+        height: 250px;
+    }
+
+    .slider-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .prev, .next {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+}
+
+/* Landscape Mobile Devices */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+
+    .hero-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .mySlides img {
+        height: 250px;
+    }
+}
+
+/* Ensure all images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent text overflow */
+p, h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Fix for long words */
+* {
+    word-break: break-word;
+}
