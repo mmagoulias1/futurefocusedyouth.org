@@ -401,6 +401,14 @@ header.scrolled .logo-text {
     color: var(--accent);
     margin-bottom: var(--spacing-md);
     transition: all 0.3s ease;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.value-card h3 {
+    text-align: center;
+    width: 100%;
 }
 
 .value-card:hover i {
